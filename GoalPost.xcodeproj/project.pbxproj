@@ -13,6 +13,10 @@
 		A402AC0E2170308D00A84409 /* GoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A402AC0C2170308D00A84409 /* GoalPost.xcdatamodeld */; };
 		A402AC102170308F00A84409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A402AC0F2170308F00A84409 /* Assets.xcassets */; };
 		A402AC132170308F00A84409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A402AC112170308F00A84409 /* LaunchScreen.storyboard */; };
+		A402AC1F21703ED800A84409 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402AC1E21703ED800A84409 /* GoalCell.swift */; };
+		A402AC21217043A600A84409 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402AC20217043A600A84409 /* GoalType.swift */; };
+		A402AC2321704C9200A84409 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402AC2221704C9200A84409 /* CreateGoalVC.swift */; };
+		A402AC2521705E7B00A84409 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402AC2421705E7B00A84409 /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A402AC0F2170308F00A84409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A402AC122170308F00A84409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A402AC142170308F00A84409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A402AC1E21703ED800A84409 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		A402AC20217043A600A84409 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		A402AC2221704C9200A84409 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		A402AC2421705E7B00A84409 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				A402AC072170308D00A84409 /* GoalVC.swift */,
+				A402AC2221704C9200A84409 /* CreateGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -81,6 +90,7 @@
 		A402AC1B2170309B00A84409 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A402AC1E21703ED800A84409 /* GoalCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,6 +98,7 @@
 		A402AC1C217030A000A84409 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				A402AC20217043A600A84409 /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -95,6 +106,7 @@
 		A402AC1D217030A500A84409 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A402AC2421705E7B00A84409 /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -170,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A402AC1F21703ED800A84409 /* GoalCell.swift in Sources */,
+				A402AC2321704C9200A84409 /* CreateGoalVC.swift in Sources */,
+				A402AC21217043A600A84409 /* GoalType.swift in Sources */,
 				A402AC082170308D00A84409 /* GoalVC.swift in Sources */,
 				A402AC062170308D00A84409 /* AppDelegate.swift in Sources */,
+				A402AC2521705E7B00A84409 /* UIViewControllerExt.swift in Sources */,
 				A402AC0E2170308D00A84409 /* GoalPost.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
