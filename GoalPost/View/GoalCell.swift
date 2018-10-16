@@ -10,6 +10,7 @@ import UIKit
 
 class GoalCell: UITableViewCell {
 
+    @IBOutlet weak var completionView: UIView!
     @IBOutlet weak var goalDescriptionLabel: UILabel!
     @IBOutlet weak var goalTypeLabel: UILabel!
     @IBOutlet weak var goalProgressLabel: UILabel!
@@ -24,10 +25,14 @@ class GoalCell: UITableViewCell {
 
     }
     
-    func setCell(desc: String, type: GoalType, progress: Int) {
-        goalDescriptionLabel.text = desc
-        goalTypeLabel.text = type.rawValue
-        goalProgressLabel.text = String(describing: progress)
+    func setCell(goal: Goal) {
+        goalDescriptionLabel.text = goal.goalDescription
+        goalTypeLabel.text = goal.goalType
+        goalProgressLabel.text = String(describing: goal.goalProgress)
+        
+        if goal.goalProgress == goal.goalCompletionValue {
+            completionView.isHidden = false
+        }
     }
 
 }
